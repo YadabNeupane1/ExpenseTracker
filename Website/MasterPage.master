@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Website_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- Animate.css -->
+    <link href="Assets/css/animate.css" rel="stylesheet" />
+    <!-- Icomoon Icon Fonts-->
+    <link href="Assets/css/icomoon.css" rel="stylesheet" />
+    <!-- Themify Icons-->
+    <link href="Assets/css/themify-icons.css" rel="stylesheet" />
+    <!-- Bootstrap  -->
+    <link href="Assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link href="Assets/css/magnific-popup.css" rel="stylesheet" />
+    <!-- Owl Carousel  -->
+    <link href="Assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="Assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- Theme style  -->
+    <link href="Assets/css/style.css" rel="stylesheet" />
+    <!-- Modernizr JS -->
+    <script src="Assets/js/modernizr-2.6.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #gtco-logo {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+            <header id="gtco-header" class="gtco-cover" role="banner">
+                <div class="overlay">
+                    <div class="gtco-nav" role="navigation">
+                        <div class="gtco-container">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div id="gtco-logo"><a style="color: white;" href="Home.aspx">Expense Tracking System</a></div>
+                            </div>
+                            <div class="col-xs-8 text-right menu-1">
+                                <ul>
+                                    <li><a href="Home.aspx">Home</a></li>
+                                    <li><a href="HowWeWork.aspx">How We Work</a></li>
+                                    <li><a href="About.aspx">About</a></li>
+                                    <li><a href="Contact.aspx">Contact</a></li>
+                                    <li><a href="../LoginSignup/Login.aspx">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </header>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        <footer id="gtco-footer" role="contentinfo">
+            <div class="gtco-container">
+                <div class="row row-p	b-md">
+                    <div class="col-md-4">
+                        <div class="gtco-widget">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-push-1">
+                        <div class="gtco-widget">
+                            <h3>Links</h3>
+                            <ul class="gtco-footer-links">
+                                <li><a href="#">Knowledge Base</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Terms of services</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gtco-widget">
+                            <h3>Get In Touch</h3>
+                            <ul class="gtco-quick-contact">
+                                <li><a href="#"><i class="icon-phone"></i>(977) 9841000000</a></li>
+                                <li><a href="#"><i class="icon-mail2"></i>eps@gmail.com</a></li>
+                                <li><a href="#"><i class="icon-head"></i>CEO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <p>
+                        <small class="block" style="text-align: center;">© 2018 All rights reserved.<br />
+                            Terms, conditions, features, availability, pricing, fees, service and support options subject to change without notice.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+        <!-- jQuery -->
+        <script src="Assets/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="Assets/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="Assets/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="Assets/js/jquery.waypoints.min.js"></script>
+        <!-- Carousel -->
+        <script src="Assets/js/owl.carousel.min.js"></script>
+        <!-- countTo -->
+        <script src="Assets/js/jquery.countTo.js"></script>
+        <!-- Magnific Popup -->
+        <script src="Assets/js/magnific-popup-options.js"></script>
+        <script src="Assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Main -->
+        <script src="Assets/js/main.js"></script>
+
+    </form>
+</body>
+</html>
