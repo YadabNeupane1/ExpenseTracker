@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="Admin_MasterAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DashBoard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Bootstrap CSS-->
+    <link href="../DashBoardStyle/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome CSS-->
+    <link href="../DashBoardStyle/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom Font Icons CSS-->
+    <link href="../DashBoardStyle/css/font.css" rel="stylesheet" />
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link href="../DashBoardStyle/css/style.blue.css" rel="stylesheet" />
+    <%--<link href="../DashBoardStyle/css/style.default.css" rel="stylesheet" />--%>
+    <%--<link href="../DashBoardStyle/css/style.violet.css" rel="stylesheet" />--%>
+    <%--<link href="../DashBoardStyle/css/style.sea.css" rel="stylesheet" />--%>
+    <%--<link href="../DashBoardStyle/css/style.green.css" rel="stylesheet" />--%>
+    <!-- Custom stylesheet - for your changes-->
+    <link href="../DashBoardStyle/css/custom.css" rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../DashBoardStyle/img/favicon.ico" />
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .label1 {
+            font: bold 20px roboto;
+            color: white;
+        }
+
+        .big {
+            font-size: 20px;
+        }
+    </style>
+    
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <header class="header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex align-items-center justify-content-between">
+                        <div class="navbar-header">
+                            <!-- Navbar Header-->
+                            <a href="Dashboard.aspx" class="navbar-brand">
+                                <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Dash</strong><strong>Board</strong></div>
+                                <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                            </a>
+                            <!-- Sidebar Toggle Btn-->
+                            <%--<button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>--%>
+                        </div>
+                        
+                            <!-- Tasks-->
+                           
+                            <!-- Tasks end-->
+                            <!-- Log out               -->
+                            <div class="list-inline-item logout text-xl-center">
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><strong class="big">Logout  <i class="fa fa-sign-out"></i></strong></asp:LinkButton>
+                            </div>
+                        </div>
+                    
+                </nav>
+            </header>
+            
+            <div class="d-flex align-items-stretch">
+                <!-- Sidebar Navigation-->
+                <nav id="sidebar">
+                    <div class="sidebar-header d-flex align-items-center">
+                        <div class="avatar">
+                            <asp:Image ID="imgProfile" ImageUrl="../DashBoardStyle/img/profile.png" CssClass="img-fluid rounded-circle" runat="server" />
+                        </div>
+                        <div class="title">
+                           
+                            <p>ADMIN</p>
+                        </div>
+                    </div>
+                    <!-- Sidebar Navidation Menus-->
+                    <span class="heading">Menu</span>
+                    <ul class="list-unstyled">
+                        <li><a href="Admin.aspx"><i class="fa fa-tachometer"></i>Dashboard </a></li>
+                        <li><a href="CreateUser.aspx"><i class="fa fa-user-circle"></i>Create New User </a></li>
+                    </ul>
+                   
+                </nav>
+                <!-- Sidebar Navigation end-->
+                <div class="page-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__block block no-margin-bottom">
+                    <div class="container-fluid text-center">
+                        <%--<p class="no-margin-bottom">2018 &copy; Your company. Design by <a href="https://bootstrapious.com">Bootstrapious</a>.</p>--%>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <!-- JavaScript files-->
+    <script src="../DashBoardStyle/vendor/jquery/jquery.min.js"></script>
+    <script src="../DashBoardStyle/vendor/popper.js/umd/popper.min.js"></script>
+    <script src="../DashBoardStyle/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../DashBoardStyle/vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../DashBoardStyle/vendor/chart.js/Chart.min.js"></script>
+    <script src="../DashBoardStyle/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="../DashBoardStyle/js/charts-custom.js"></script>
+    <script src="../DashBoardStyle/js/front.js"></script>
+</body>
+</html>
